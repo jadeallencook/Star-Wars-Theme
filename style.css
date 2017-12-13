@@ -11,6 +11,17 @@
     font-family: 'Bungee', cursive;
   }
   
+  span#starwars-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 0.75em;
+  }
+
+  span#starwars-close-btn:hover {
+    opacity: 0.5;
+  }
+
   div#star-wars-btn:hover {
     padding: 5px 15px 5px 25px;
   }
@@ -35,6 +46,7 @@
     top: 0px;
     left: 0px;
     z-index: 9999;
+    cursor: pointer;
   }
   
   .starwars section {
@@ -94,7 +106,7 @@
   }
   
   #star-wars-content p {
-    margin: 15px 0px;
+    margin: 45px 0px;
     line-height: 71px;
   }
   
@@ -121,7 +133,7 @@
   .starwars .titles>div {
     position: absolute;
     top: 100%;
-    animation: titles 250s linear 13s;
+    animation: titles 450s linear 13s;
   }
   
   @keyframes intro {

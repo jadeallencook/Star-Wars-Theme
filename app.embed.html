@@ -1,242 +1,254 @@
 <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet" />
 <style>
   div#star-wars-btn {
-  background-color: #F8DE4B;
-  display: inline-block;
-  text-align: center;
-  padding: 5px 15px;
-  position: fixed;
-  bottom: 50px;
-  left: 0px;
-  cursor: pointer;
-  font-family: 'Bungee', cursive;
-}
-
-div#star-wars-btn:hover {
-  padding: 5px 15px 5px 25px;
-}
-
-@media (max-width: 850px) {
-  div#star-wars-btn {
-    display: none;
+    background-color: #F8DE4B;
+    display: inline-block;
+    text-align: center;
+    padding: 5px 15px;
+    position: fixed;
+    bottom: 50px;
+    left: 0px;
+    cursor: pointer;
+    font-family: 'Bungee', cursive;
   }
-}
 
-@import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
-.starwars {
-  width: 100%;
-  height: 100%;
-  font: 700 1em "News Cycle", sans-serif;
-  letter-spacing: .15em;
-  color: #ff6;
-  background: #000;
-  overflow: hidden;
-  margin: 0;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  z-index: 9999;
-}
+  span#starwars-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 0.75em;
+  }
 
-.starwars section {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  z-index: 1;
-}
+  span#starwars-close-btn:hover {
+    opacity: 0.5;
+  }
 
-section#starwars-logo {
-  width: 100%;
-  left: 0px;
-  top: 15%;
-  margin: 0px;
-}
+  div#star-wars-btn:hover {
+    padding: 5px 15px 5px 25px;
+  }
 
-.starwars .start {
-  font-size: 200%;
-  width: 14em;
-  margin: -4em 0 0 -7em;
-  text-align: center;
-  cursor: pointer;
-}
+  @media (max-width: 850px) {
+    div#star-wars-btn {
+      display: none;
+    }
+  }
 
-.starwars .start span {
-  color: #4bd5ee;
-}
+  @import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
+  .starwars {
+    width: 100%;
+    height: 100%;
+    font: 700 1em "News Cycle", sans-serif;
+    letter-spacing: .15em;
+    color: #ff6;
+    background: #000;
+    overflow: hidden;
+    margin: 0;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+    cursor: pointer;
+  }
 
-.starwars .intro {
-  width: 15em;
-  margin: 0 0 0 -7.5em;
-  font-size: 200%;
-  font-weight: 400;
-  color: #4bd5ee;
-  opacity: 0;
-  animation: intro 6s ease-out 1s;
-  text-align: center;
-}
+  .starwars section {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    z-index: 1;
+  }
 
-.starwars .logo {
-  opacity: 0;
-  animation: logo 9s ease-out 9s;
-  margin-top: 25%;
-}
+  section#starwars-logo {
+    width: 100%;
+    left: 0px;
+    top: 15%;
+    margin: 0px;
+  }
 
-section#star-wars-logo {
-  width: 100%;
-  margin: 0px auto;
-  display: block;
-  top: 25%;
-  left: 0px;
-  text-align: center;
-}
+  .starwars .start {
+    font-size: 200%;
+    width: 14em;
+    margin: -4em 0 0 -7em;
+    text-align: center;
+    cursor: pointer;
+  }
 
-section#star-wars-logo img {
-  width: 400px;
-}
+  .starwars .start span {
+    color: #4bd5ee;
+  }
 
-#star-wars-content p {
-  margin: 15px 0px;
-  line-height: 71px;
-}
-
-.starwars .titles {
-  width: 14.65em;
-  margin: 0 0 0 -7.325em;
-  top: auto;
-  bottom: 0;
-  height: 50em;
-  font-size: 350%;
-  text-align: justify;
-  overflow: hidden;
-  transform-origin: 50% 100%;
-  -moz-transform: perspective(300px) rotateX(25deg);
-  -ms-transform: perspective(300px) rotateX(25deg);
-  -webkit-transform: perspective(300px) rotateX(25deg);
-  transform: perspective(300px) rotateX(25deg);
-}
-
-.starwars .title p {
-  line-height: 61px;
-}
-
-.starwars .titles>div {
-  position: absolute;
-  top: 100%;
-  animation: titles 250s linear 13s;
-}
-
-@keyframes intro {
-  0% {
+  .starwars .intro {
+    width: 15em;
+    margin: 0 0 0 -7.5em;
+    font-size: 200%;
+    font-weight: 400;
+    color: #4bd5ee;
     opacity: 0;
+    animation: intro 6s ease-out 1s;
+    text-align: center;
   }
-  20% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
+
+  .starwars .logo {
     opacity: 0;
+    animation: logo 9s ease-out 9s;
+    margin-top: 25%;
   }
-}
 
-@keyframes logo {
-  0% {
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
+  section#star-wars-logo {
+    width: 100%;
+    margin: 0px auto;
+    display: block;
+    top: 25%;
+    left: 0px;
+    text-align: center;
   }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    -moz-transform: scale(0.1);
-    -ms-transform: scale(0.1);
-    -webkit-transform: scale(0.1);
-    transform: scale(0.1);
-  }
-}
 
-@keyframes titles {
-  0% {
+  section#star-wars-logo img {
+    width: 400px;
+  }
+
+  #star-wars-content p {
+    margin: 45px 0px;
+    line-height: 71px;
+  }
+
+  .starwars .titles {
+    width: 14.65em;
+    margin: 0 0 0 -7.325em;
+    top: auto;
+    bottom: 0;
+    height: 50em;
+    font-size: 350%;
+    text-align: justify;
+    overflow: hidden;
+    transform-origin: 50% 100%;
+    -moz-transform: perspective(300px) rotateX(25deg);
+    -ms-transform: perspective(300px) rotateX(25deg);
+    -webkit-transform: perspective(300px) rotateX(25deg);
+    transform: perspective(300px) rotateX(25deg);
+  }
+
+  .starwars .title p {
+    line-height: 61px;
+  }
+
+  .starwars .titles>div {
+    position: absolute;
     top: 100%;
-    opacity: 1;
+    animation: titles 450s linear 13s;
   }
-  95% {
-    opacity: 1;
+
+  @keyframes intro {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
   }
-  100% {
-    top: -1000%;
-    opacity: 0;
+
+  @keyframes logo {
+    0% {
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      -moz-transform: scale(0.1);
+      -ms-transform: scale(0.1);
+      -webkit-transform: scale(0.1);
+      transform: scale(0.1);
+    }
   }
-}
+
+  @keyframes titles {
+    0% {
+      top: 100%;
+      opacity: 1;
+    }
+    95% {
+      opacity: 1;
+    }
+    100% {
+      top: -1000%;
+      opacity: 0;
+    }
+  }
 </style>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js?ref=mouseflow"></script>
 
 <!-- app -->
 <article class="starwars" style="display: none;">
+  <span id="starwars-close-btn">Return To Home</span>
   <div class="animation">
     <section class="intro">
       Deseret News
       <br />
       <small>
-        <i>Presents...</i>
+        <i>presents...</i>
       </small>
     </section>
     <section class="titles">
-      <div id="star-wars-content"></div>
+      <div id="star-wars-content">
     </section>
     <section class="logo" id="star-wars-logo">
       <img src="https://media.deseretdigital.com/file/5f1b659889?resize=width_800&type=png&c=14&a=af527bd9" />
     </section>
-  </div>
+    </div>
 </article>
 
-<div id="star-wars-btn">Use The Force</div>
+<div id="star-wars-btn">Launch</div>
 <script>
   (function () {
-    // attach animation to button
-    $('#star-wars-btn').click(function () {
-      $('article.starwars').css('display', 'block');
-    });
-    // starwars codepen
-    StarWars = (function () {
-      // constructor
-      function StarWars(args) {
-        // context wrapper
-        this.el = $(args.el);
-        // start animation
-        this.start = $('#star-wars-btn');
-        // animation wrapper
-        this.animation = this.el.find('.animation');
-        // start the animation on click
-        this.start.click($.proxy(function () {
-          // extract article data
-          for (var x = 0, max = document.querySelectorAll('.article-body-text-wrapper > p').length; x < max; x++) {
-            var text = '<p>' + document.querySelectorAll('.article-body-text-wrapper > p')[x].innerText +
-              '</p>';
-            $('#star-wars-content').append(text);
-          }
-          // show animation
+  // attach animation to button
+  $('#star-wars-btn').click(function () {
+    $('article.starwars').css('display', 'block');
+  });
+  // starwars codepen
+  StarWars = (function () {
+    // constructor
+    function StarWars(args) {
+      // context wrapper
+      this.el = $(args.el);
+      // start animation
+      this.start = $('#star-wars-btn');
+      // animation wrapper
+      this.animation = this.el.find('.animation');
+      // start the animation on click
+      this.start.click($.proxy(function () {
+        // extract article data
+        for (var x = 0, max = document.querySelectorAll('.article-body-text-wrapper > p').length; x < max; x++) {
+          var text = '<p>' + document.querySelectorAll('.article-body-text-wrapper > p')[x].innerText + '</p>';
+          $('#star-wars-content').append(text.replace('• ' , ''));
+        }
+        // show animation
+        window.scrollTo(0, 0);
+        this.start.hide();
+        this.el.append(this.animation);
+        // exiting animation events
+        $('.starwars').click(function () {
+          $('.starwars').hide();
+          $(window).off('scroll.disableScroll');
+        });
+        $(window).on('scroll.disableScroll', function() {
           window.scrollTo(0, 0);
-          this.start.hide();
-          this.el.append(this.animation);
-          // exiting animation events
-          $('.starwars').click(function () {
-            $('.starwars').hide();
-            $(window).off('scroll.disableScroll');
-          });
-          $(window).on('scroll.disableScroll', function () {
-            window.scrollTo(0, 0);
-          });
-        }, this));
-      }
-      return StarWars;
-    })();
-    new StarWars({
-      el: '.starwars'
-    });
+        });
+      }, this));
+    }
+    return StarWars;
   })();
+  new StarWars({
+    el: '.starwars'
+  });
+})();
 </script>

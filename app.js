@@ -18,7 +18,7 @@
         // extract article data
         for (var x = 0, max = document.querySelectorAll('.article-body-text-wrapper > p').length; x < max; x++) {
           var text = '<p>' + document.querySelectorAll('.article-body-text-wrapper > p')[x].innerText + '</p>';
-          $('#star-wars-content').append(text);
+          $('#star-wars-content').append(text.replace('• ' , ''));
         }
         // show animation
         window.scrollTo(0, 0);
